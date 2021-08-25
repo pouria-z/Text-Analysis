@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sentiment_analysis/api_key.dart';
+//import 'package:sentiment_analysis/api_key.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
       'text': '${_controller.text.trim()}',
       'language': 'en',
     }, headers: {
-      'x-rapidapi-key': '$apiKey',
+      'x-rapidapi-key': 'apiKey',
       'x-rapidapi-host': 'webit-text-analytics.p.rapidapi.com'
     });
     var json = jsonDecode(response.body);
