@@ -15,12 +15,12 @@ Analyzes the sentiment of an input text and detects:
 
 Key phrases extraction allows for identifying the keywords and main concepts in a text.
 
-### Contact
+### Contact Me
 
 You can also check my other apps on [here](https://cafebazaar.ir/developer/413934687302?l=en).
 
 - pouria.zeinalzadeh@gmail.com
-- pouriazeinalzadeh.web.app
+- [pouriazeinalzadeh.web.app](https://pouriazeinalzadeh.web.app)
 
 
 # Text Analysis
