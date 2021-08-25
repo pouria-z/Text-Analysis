@@ -1,17 +1,19 @@
-# sentiment_analysis
+# Text Analysis
 
-A Natural Language Processing app for Sentiment Analysis Text with Python REST Backend
-
-## Getting Started
-
+A Natural Language Processing app for Sentiment Analysis using "Webit Text Analytics" API for backend.
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Sentiment Analyst
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Analyzes the sentiment of an input text and detects:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Text-Analysis
+- Positivity
+- Negativity
+- Neutrality
+
+## Key Phrases Analyst
+
+Key phrases extraction allows for identifying the keywords and main concepts in a text.
+
+
+# Text Analysis
