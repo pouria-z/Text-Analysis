@@ -1,6 +1,7 @@
 # Text Analysis
 
 A Natural Language Processing app for Sentiment and Key Phrases Analysis using "Webit Text Analytics" API for backend.
+
 This project is a starting point for a Flutter application.
 
 ## Sentiment Analyst
