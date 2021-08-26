@@ -23,7 +23,7 @@ Key phrases extraction allows for identifying the keywords and main concepts in 
 
 ## Similarity Analyst
 
-This section can compare 2 phrases using sophisticated set of AI algorithms (with Webit Text Analytics API) and shows them similarity score (a number between 0 to 1) between the 2 phrases.
+This section can compare 2 phrases using sophisticated set of AI algorithms (with Webit Text Analytics API) and shows the similarity score (a number between 0 to 1) between the 2 phrases.
 
 
 ### Contact Me
