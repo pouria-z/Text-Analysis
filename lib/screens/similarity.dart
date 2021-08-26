@@ -104,6 +104,7 @@ class _SimilarityState extends State<Similarity> {
                   return null;
                 } else {
                   setState(() {
+                    FocusScope.of(context).unfocus();
                     string1 = _controller1.text.trim();
                     string2 = _controller2.text.trim();
                   });

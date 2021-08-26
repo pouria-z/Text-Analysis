@@ -84,6 +84,7 @@ class _SentimentState extends State<Sentiment> {
                 if (_controller.text.trim().isEmpty) {
                   return null;
                 } else {
+                  FocusScope.of(context).unfocus();
                   await postData().whenComplete(() => _controller.clear());
                 }
               },

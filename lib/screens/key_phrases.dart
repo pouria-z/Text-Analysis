@@ -83,6 +83,7 @@ class _KeyPhrasesState extends State<KeyPhrases> {
                 if (_controller.text.trim().isEmpty) {
                   return null;
                 } else {
+                  FocusScope.of(context).unfocus();
                   await postData().whenComplete(() => _controller.clear());
                 }
               },
