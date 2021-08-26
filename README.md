@@ -4,6 +4,7 @@ A Natural Language Processing app for Sentiment and Key Phrases Analysis using "
 
 This project is a starting point for a Flutter application.
 
+
 ## Sentiment Analyst
 
 Analyzes the sentiment of an input text and detects:
@@ -12,13 +13,18 @@ Analyzes the sentiment of an input text and detects:
 - Negativity
 - Neutrality
 
+And returns a score for each (a number between 0 to 1).
+
+
 ## Key Phrases Analyst
 
 Key phrases extraction allows for identifying the keywords and main concepts in a text.
 
+
 ## Similarity Analyst
 
-This section can compare 2 phrases using sophisticated set of AI algorithms ( with Webit Text Analytics API) and shows them similarity score (a number between 0 to 1) between the 2 phrases.
+This section can compare 2 phrases using sophisticated set of AI algorithms (with Webit Text Analytics API) and shows them similarity score (a number between 0 to 1) between the 2 phrases.
+
 
 ### Contact Me
 
