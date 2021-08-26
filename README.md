@@ -16,6 +16,10 @@ Analyzes the sentiment of an input text and detects:
 
 Key phrases extraction allows for identifying the keywords and main concepts in a text.
 
+## Similarity Analyst
+
+This section can compare 2 phrases using sophisticated set of AI algorithms ( with Webit Text Analytics API) and shows them similarity score (a number between 0 to 1) between the 2 phrases.
+
 ### Contact Me
 
 You can also check my other apps on [here](https://cafebazaar.ir/developer/413934687302?l=en).
