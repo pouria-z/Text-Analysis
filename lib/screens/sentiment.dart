@@ -14,8 +14,8 @@ class Sentiment extends StatefulWidget {
 class _SentimentState extends State<Sentiment> {
   TextEditingController _controller = TextEditingController();
   var inputText;
-  double pos = 0.0;
-  double neg = 0.0;
+  var pos;
+  var neg;
   bool isLoading = false;
   bool isEnable = false;
   var input;
@@ -24,8 +24,8 @@ class _SentimentState extends State<Sentiment> {
     setState(() {
       isLoading = true;
       inputText = null;
-      pos = 0.0;
-      neg = 0.0;
+      pos = "";
+      neg = "";
     });
     var url = Uri.parse(
       'https://webit-text-analytics.p.rapidapi.com/sentiment',
@@ -104,24 +104,28 @@ class _SentimentState extends State<Sentiment> {
                             borderRadius: BorderRadius.circular(20),
                             color: pos > neg
                                 ? Colors.green[700]
-                                : Colors.red[700]),
+                                : pos == neg
+                                    ? Colors.yellowAccent
+                                    : Colors.red[700]),
                         child: Center(
                             child: Text(
                           inputText,
-                          style: TextStyle(color: Colors.white, fontSize: 22),
+                          style: TextStyle(
+                              color: pos == neg ? Colors.black : Colors.white,
+                              fontSize: 22),
                         )),
                       ),
             SizedBox(
               height: 20,
             ),
-            pos == 0.0
+            pos == ""
                 ? Container()
                 : TextBox(
                     value: pos,
                     otherValue: neg,
                     color: Colors.green,
                     title: 'Positive'),
-            pos == 0.0
+            pos == ""
                 ? Container()
                 : TextBox(
                     value: neg,
@@ -145,15 +149,17 @@ class TextBox extends StatelessWidget {
     required this.title,
   }) : super(key: key);
 
-  final double value;
-  final double otherValue;
+  final value;
+  final otherValue;
   final Color color;
   final String title;
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      "$title: ${value.toStringAsFixed(6)}",
+      value == otherValue || value.runtimeType == int
+          ? "$title: ${value.toString()}"
+          : "$title: ${value.toStringAsFixed(4)}",
       style: TextStyle(
           color: value > otherValue ? color : Colors.white, fontSize: 18),
     );
