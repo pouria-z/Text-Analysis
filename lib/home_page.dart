@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sentiment_analysis/screens/key_phrases.dart';
 import 'package:sentiment_analysis/screens/sentiment.dart';
+import 'package:sentiment_analysis/screens/similarity.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _HomePageState extends State<HomePage>
   @override
   void initState() {
     _controller = TabController(
-      length: 2,
+      length: 3,
       vsync: this,
     );
     super.initState();
@@ -34,6 +35,7 @@ class _HomePageState extends State<HomePage>
         children: [
           Sentiment(),
           KeyPhrases(),
+          Similarity(),
         ],
       ),
       bottomNavigationBar: Material(
@@ -45,7 +47,10 @@ class _HomePageState extends State<HomePage>
             ),
             Tab(
               text: "Key Phrases",
-            )
+            ),
+            Tab(
+              text: "Similarity",
+            ),
           ],
         ),
       ),

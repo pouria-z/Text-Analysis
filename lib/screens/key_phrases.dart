@@ -12,7 +12,7 @@ class KeyPhrases extends StatefulWidget {
 }
 
 class _KeyPhrasesState extends State<KeyPhrases> {
-  late TextEditingController _controller = TextEditingController();
+  TextEditingController _controller = TextEditingController();
   bool isLoading = false;
   bool showText = false;
   var keyPhrase;
